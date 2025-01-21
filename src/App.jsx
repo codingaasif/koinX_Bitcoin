@@ -19,9 +19,6 @@ import { Box } from '@mui/material';
 
 const App = () => {
   const dispatch = useDispatch();
-  // const coins = useSelector((state) => state?.koinX.trendingCoins)
-  // console.log(coins, "coins")
-
 
 
   useEffect(() => {

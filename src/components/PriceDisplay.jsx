@@ -2,12 +2,10 @@ import { Box, Typography, CircularProgress, Paper, Grid } from '@mui/material';
 import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-// import PerformancePage from './PerformancePage';
 import { useSelector } from 'react-redux';
 
 const PriceDisplay = () => {
     const priceData = useSelector((state) => state?.koinX?.bitcoinPrice)
-    // console.log(priceData, "priceData")
 
 
     if (!priceData) {
@@ -107,10 +105,6 @@ const PriceDisplay = () => {
                     </Grid>
                 </Grid>
             </Paper>
-            {/* Performance Page */}
-            {/* <Box sx={{ mt: 4 }}>
-                <PerformancePage priceData={priceData} />
-            </Box> */}
         </Box>
     );
 };
